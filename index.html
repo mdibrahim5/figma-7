@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JavaScript is the programming language of the Web. JavaScript is easy to learn.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thumbnail File</title>
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    
+</head>
+<body>
+    <section class="header-area pb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  pt-3 pb-5">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <a class="navbar-brand" href="#">Bean Scene</a>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="#">Menu</a>
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <button type="button" class="btn button-1">Sign In</button>
+                    <button class="btn button-2 show" onclick="showPopUp()">SingUp</button>
+                        <div class="pop-up">
+                          <form>
+                             <h2>Creat An Account</h2>
+                              <div class="mb-2">
+                                <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                                <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                                <div id="nameHelp" class="form-text">Full Name Share</div>
+                              </div>
+                               <div class="mb-2">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                              </div>
+                              <div class="mb-2">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                             <button class="close-button" onclick="closePopUp()">ok! close</button>
+                        </div>
+
+                        <div class="overlay"></div>
+
+                        <i class="fa-regular fa-circle-xmark close-x"></i>
+                    
+                  </form>
+                </div>
+              </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-6 home-text pt-5 pb-5">
+                    <span>We’ve got your morning covered with</span>
+                    <h1>Coffee</h1>
+                    <p>It is best to start your day with a cup of coffee. Discover the
+                    best flavours coffee you will ever have. We provide the best
+                    for our customers.</p>
+                    <a href="#">Order Now</a>
+                    
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+    <section class="discover-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 pt-5">
+                    <h2>Discover the best coffee</h2>
+                    <p>Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and helps build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no doubt that you will enjoy this coffee more than others you have ever tasted.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="col-md-5 ">
+                    <img src="image/stylized-cup-coffee-out-coffee-beans-flat-lay%201.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="logo-area">
+        <img src="image/coffee_blast.png" alt="">
+    </div>
+    <section class="style-area text-center pt-5 pb-5">
+        <div class="container">
+            <h2>Enjoy a new blend of coffee style</h2>
+            <p>Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
+            <div class="row">
+                <div class="col-md-3 style-item">
+                    <img src="image/Rectangle%207.png" alt="">
+                    <div class="style-text pt-3 pb-3">
+                        <h4>Cappuccino</h4>
+                        <p>Coffee 50% | Milk 50%</p>
+                        <h6>$8.50</h6>
+                        <a href="#">Order Now</a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 style-item ">
+                       <img src="image/Rectangle%209.png" alt="">
+                       <div class="style-text pt-3 pb-3">
+                        <h4>Chai Latte</h4>
+                        <p>Coffee 50% | Milk 50%</p>
+                        <h6>$8.50</h6>
+                        <a href="#">Order Now</a>
+                        </div>
+                   
+                    
+                </div>
+                <div class="col-md-3 style-item">
+                    <img src="image/Rectangle%2011.png" alt="">
+                    <div class="style-text pt-3 pb-3">
+                    <h4>Macchiato</h4>
+                    <p>Coffee 50% | Milk 50%</p>
+                    <h6>$8.50</h6>
+                    <a href="#">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-3 style-item">
+                    <img src="image/Rectangle%2013.png" alt="">
+                    <div class="style-text pt-3 pb-3">
+                        <h4>Expresso</h4>
+                        <p>Coffee 50% | Milk 50%</p>
+                        <h6>$8.50</h6>
+                        <a href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="different-area pb-5">
+        <div class="logo-area text-end">
+            <img src="image/coffee_blast%20(1).png" alt="">
+        </div>
+        <div class="best-area text-center">
+            <div class="container">
+                <h2>Why are we different?</h2>
+                <p>We don’t just make your coffee, we make your day!</p>
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-3  pt-3">
+                       <div class="best-item pt-3">
+                           <img src="image/coffee-beans%201%20(1).png" alt="">
+                            <div class="style-text pt-3 pb-3">
+                                <h4>Supreme Beans</h4>
+                                <p>Beans that provides <br> great taste</p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                          <div class="best-item pt-3"> 
+                               <img src="image/badge%201.png" alt="">
+                               <div class="style-text pt-3 pb-3">
+                                    <h4>High Quality</h4>
+                                    <p>We provide the <br>
+                                    highest quality</p>
+                                </div>
+                            </div>   
+                    </div>
+                    <div class="col-md-3 pt-3">
+                       <div class="best-item pt-3">
+                            <img src="image/coffee-cup%201.png" alt="">
+                            <div class="style-text pt-3 pb-3">
+                                <h4>Extraordinary </h4>
+                                <p>Coffee like you have <br>
+                                never tasted</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  pt-3">
+                       <div class="best-item pt-3">
+                            <img src="image/best-price%201.png" alt="">
+                            <div class="style-text pt-3 pb-3">
+                                <h4>Affordable Price</h4>
+                                <p>Our Coffee prices are <br>
+                                easy to afford</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Great ideas start with great coffee, Lets help you achieve that</p>
+                <h4>Get started today.</h4>
+                <a href="#">Join Us</a>
+            </div>
+        </div>  
+    </section>
+    <section class="coffee-area">
+       <div class="overly-coffee">
+        <div class="container">
+            <div class="row pt-5 ">
+                <div class="col-md-6">
+                   <div class="coffee-text pt-5 ">
+                        <h2>Get a chance to have an Amazing morning</h2>
+                        <p>We are giving you are one time opportunity to
+                        experience a better life with coffee.</p>
+                        
+                            <a href="#">Order Now</a>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                   <div class="coffee-img">
+                    <img class="bean" src="image/coffee_bean.png" alt="">
+                    <img class="cup" src="image/cup.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="feedback text-center pt-5 pb-5">
+        <div class="feedback-text">
+               <h2>Our coffee perfection feedback</h2>
+               <p>Our coffee perfection feedback</p>
+           </div>
+           
+           <div class="container">
+           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                 
+                  <p><b>“</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+                  <h4>Jonny Thomas</h4>
+                  <span>Project Manager</span>
+                </div>
+                <div class="carousel-item">
+                 
+                  <p><b>“</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+                  <h4>Jonny Thomas</h4>
+                  <span>Project Manager</span>
+                  
+                </div>
+                <div class="carousel-item">
+                 
+                  <p><b>“</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+                  <h4>Jonny Thomas</h4>
+                   <span>Project Manager</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="logo text-end">
+               <img src="image/coffee_blast%20(1).png" alt="">
+           </div>
+            <div class="logo-2">
+               <img src="image/coffee_blast.png" alt="">
+           </div>
+        </div>
+    </section>
+    <section class="Subscribe-area text-center">
+       <div class="overly">
+        <div class="container">
+           <div class="subscribe-text ">
+            <h2>Subscribe to get the Latest News</h2>
+            <p>Don’t miss out on our latest news, updates, tips and special offers</p>
+            <form>
+                <input type="email" placeholder="signmeupnow@here.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            </div>
+           </div>     
+        </div>
+    </section>
+    <footer class="footer-area pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    <h1>Bean Scene</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="footer-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>       
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-md-2 list">
+                        <ul>
+                            <li class="active"><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">News & Blogs</a></li>
+                            <li><a href="#">Help & Supports</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 list">
+                        <ul>
+                            <li class="active"><a href="#">Company</a></li>
+                            <li><a href="#">How we work</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 list">
+                        <ul>
+                            <li class="active"><a href="#">Contact Us</a></li>
+                            <li><a href="#">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</a></li>
+                            <li><a href="#">+1 202-918-2132</a></li>
+                            <li><a href="#">beanscene@mail.com</a></li>
+                            <li><a href="#">www.beanscene.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script  src="js/custom.js"></script>
+    
+</body>
+</html>
